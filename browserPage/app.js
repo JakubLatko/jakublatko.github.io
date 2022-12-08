@@ -37,7 +37,7 @@ function checkTime(i) {
   }
 
 
-  function holidayCounter(){
+function holidayCounter(){
     let dateFuture=new Date(2023, 5, 23 )
     let dateNow=new Date()
     let difference= dateFuture.getTime() - dateNow.getTime()
@@ -53,3 +53,54 @@ function checkTime(i) {
     document.getElementById("secondsCounter").innerHTML = seconds + " sekund"
     setTimeout(holidayCounter, 1000)
   }
+
+
+let enlarger = document.getElementById("apodEnlarger")
+    enlarger.addEventListener("click", () =>{
+      document.getElementById("imageItself").style.width="100vw"
+      document.getElementById("imageItself").style.height="100vh"
+      document.getElementById("imageItself").style.zIndex="20"
+      document.getElementById("imageItself").style.position="fixed"
+      document.getElementById("imageItself").style.right="0.1vw"
+      document.getElementById("imageItself").style.top="0.1vw"
+      document.getElementById("apodClosing").style.display="block"
+    })
+    
+
+
+
+
+ 
+let closer = document.getElementById("apodClosing")
+    closer.addEventListener("click", () =>{
+      document.getElementById("apodClosing").style.display="none"
+      document.getElementById("imageItself").style.width="35vw"
+      document.getElementById("imageItself").style.height="fit-content"
+      document.getElementById("imageItself").style.zIndex="0"
+      document.getElementById("imageItself").style.position="unset"
+      document.getElementById("imageItself").style.right="0"
+      document.getElementById("imageItself").style.top="0"
+    })
+    
+document.getElementById("apodCaller").addEventListener("click", apodAPI())
+
+function apodAPI(){
+    var url = "https://api.nasa.gov/planetary/apod?api_key=70Eg6Uf0bsaCKOzWdwZwbbmZseEGx1i3GWq4CW7a"
+    fetch(url)
+        .then(res => res.json())
+        .then(data => {
+          console.log(data)
+          console.log(data.hdurl)
+          document.getElementById("apodTitle").innerText = data.title
+          document.getElementById("APODimage").src = data.hdurl
+          document.getElementById("apodExplanation").innerText = data.explanation
+          document.getElementById("apodEnlarger").style
+        })
+}
+
+      
+
+
+
+      
+  

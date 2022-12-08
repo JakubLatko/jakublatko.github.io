@@ -23,8 +23,19 @@
 
 
 
-.prawo { grid-area: prawo; }
+.prawo{ 
+    grid-area: prawo; 
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.25);
+}
 
+#apodCaller{
+    width: 10vw;
+    height: 10vh;
+    align-self: center;
+    margin-left: 10vw;
+    
+}
 
 
 .apod{
@@ -35,27 +46,68 @@
 
 
 
-.imageItself{
+#imageItself{
     width: 35vw;
+    height:fit-content ;
+    flex-grow: 1;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.25);
+    flex-direction: column;
+} 
+
+#APODimage{
+    width: fit-content;
+    height: 35vh;
+    align-self: center;
+    justify-self: center;
+    flex-grow: 1;
+
+}
+
+#apodEnlarger{
+   position: fixed;
+   bottom: 46vh;
+   align-self: flex-end;
+   cursor: pointer; 
+}
+
+#apodClosing{
+    display: none;
+    position: fixed;
+    color: whitesmoke;
+    font-size: 80px;
+    z-index: 25;
+    cursor: pointer;
+    padding: 0 2vw 0 2vw;
+    right: 10vw;
+    font-family: 'Vazirmatn', sans-serif;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.enlargingIcon{
+    width: 2vw;
     height: fit-content;
 }
-.apodTitle{
+
+#apodTitle{
     background-color: rgba(0, 0, 0, 0.5);
     color: whitesmoke;
+    font-size: 2rem;
     flex-grow: 1;
-    font-size: 3rem;
     font-family: 'DM Sans', sans-serif;
     font-weight: 600;
     text-align: center;
-
+    height: fit-content;
 }
-.apodExplanation{
+
+#apodExplanation{
     font-family:  'Roboto Slab', serif;
     color: aliceblue;
     text-align: justify;
     padding: 1vw;
     font-size: 1rem;
 }
+
 .clock{
     width: 20vw;
     height: 15vh;
@@ -74,10 +126,6 @@
     grid-area: time;
     display: flex;
 
-}
-
-.prawo{
-    background-color: antiquewhite;
 }
 
 
@@ -177,3 +225,6 @@
     "tab tab tab tab";
     height: auto;
 }
+
+
+
