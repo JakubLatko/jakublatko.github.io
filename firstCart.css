@@ -1,0 +1,230 @@
+.mainContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: #333;
+    background-image: url(zdjecia/jwstSpaceCliffs.png);
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center center;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.4fr 1.2fr 1.2fr; 
+    gap: 15px 15px; 
+    grid-template-areas: 
+      "time holidays prawo"
+      "tabs apod spaceTabs"
+      ". apodEXPL ."; 
+    }
+
+
+
+
+
+.prawo{ 
+    grid-area: prawo; 
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+#apodCaller{
+    width: 10vw;
+    height: 10vh;
+    align-self: center;
+    margin-left: 10vw;
+    
+}
+
+
+.apod{
+    grid-area: apod;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#imageItself{
+    width: 35vw;
+    height:fit-content ;
+    flex-grow: 1;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.25);
+    flex-direction: column;
+} 
+
+#APODimage{
+    width: fit-content;
+    height: 35vh;
+    align-self: center;
+    justify-self: center;
+    flex-grow: 1;
+
+}
+
+#apodEnlarger{
+   position: fixed;
+   bottom: 46vh;
+   align-self: flex-end;
+   cursor: pointer; 
+}
+
+#apodClosing{
+    display: none;
+    position: fixed;
+    color: whitesmoke;
+    font-size: 80px;
+    z-index: 25;
+    cursor: pointer;
+    padding: 0 2vw 0 2vw;
+    right: 10vw;
+    font-family: 'Vazirmatn', sans-serif;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.enlargingIcon{
+    width: 2vw;
+    height: fit-content;
+}
+
+#apodTitle{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
+    font-size: 2rem;
+    flex-grow: 1;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    height: fit-content;
+}
+
+#apodExplanation{
+    font-family:  'Roboto Slab', serif;
+    color: aliceblue;
+    text-align: justify;
+    padding: 1vw;
+    font-size: 1rem;
+}
+
+.clock{
+    width: 20vw;
+    height: 15vh;
+    background-color: rgba(127, 255, 212, 0.1);
+    font-size: 72px;
+    font-family: 'DM Sans', sans-serif;
+    align-self: flex-end;
+    justify-self: flex-end;
+    flex-grow: 1;
+    color: whitesmoke;
+}
+#timeDisplay{
+    margin-left: 8vw;
+}
+.time{
+    grid-area: time;
+    display: flex;
+
+}
+
+
+.apodEXPL{
+    grid-area: apodEXPL;
+    background-color: rgba(0, 0, 0, 0.25);
+
+}
+
+
+
+.tabs{
+    grid-area: tabs;
+    background-color: rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ; 
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    grid-template-areas: 
+    "tab tab tab tab"
+    "tab tab tab tab"
+    "tab tab tab tab"
+    "tab tab tab tab";
+    height: auto;
+    
+    
+}
+
+
+.tab{
+   
+    width: 5vw;
+    height: 7.5vh;
+    border-radius: 20%;
+    margin: 1vh 1vh 2.5vh 3vh;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-family: 'Roboto Slab' ,sans-serif;
+    position:relative;
+}
+.iconImage{
+    align-self: center;
+    justify-self: center;
+    width: auto;
+    height: inherit;
+    position: fixed;
+    overflow: hidden;
+
+}
+.tab h3{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 7.5vh;
+    color:whitesmoke;
+}
+
+.holidays {
+    background-color: rgba(68, 68, 68, 0.25);
+    grid-area: holidays;
+    text-align: center;
+}
+
+#holidayCounter{
+    color: whitesmoke;
+
+
+}
+
+
+
+.holidayCounterDigits{
+    font-size: 14px;
+    font-family: 'DM Sans',"sans-serif";
+    letter-spacing: 2px;
+
+
+}
+
+
+.holidaysHeader{
+   font-family: 'Vazirmatn', sans-serif;
+    color: aliceblue;
+}
+
+
+
+.spaceTabs{
+    grid-area: spaceTabs;
+    background-color: rgb(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ; 
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    grid-template-areas: 
+    "tab tab tab tab"
+    "tab tab tab tab"
+    "tab tab tab tab"
+    "tab tab tab tab";
+    height: auto;
+}
+
+
+

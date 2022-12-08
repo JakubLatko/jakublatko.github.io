@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8"> 
+        <link rel="stylesheet"  href="styles.css">
+        <link rel="stylesheet"  href="firstCart.css">
+        <title>Nowa karta</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <script src="app.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;1,700&family=Roboto+Slab&family=Vazirmatn&display=swap" rel="stylesheet">
+    </head>
+    <body onload="startTime(), holidayCounter()">
+        <div class="carousel" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+            <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+            <div data-slides>
+                <div class="slide" data-active>
+                    <div class="mainContainer">
+                        <div id="apodClosing">X</div>
+                        <div class="apod">
+                            <div id="imageItself" ><img id="APODimage" src="https://apod.nasa.gov/apod/image/2212/M16Pillar_WebbOzsarac_1668.jpg"></div>
+                            <div id="apodEnlarger"><img src="zdjecia/googleDriveIcon.png" class="enlargingIcon"> </div>
+                            <div id="apodTitle">JWST's Space Cliffs</div>
+                        </div>
+
+                        <div class="apodEXPL">
+                            <div id="apodExplanation">Lorem ipsum dolor
+                            sit amet consectetur adipisicing elit. Bl
+                            anditiis illo libero enim dolor ad, ut qu
+                            ibusdam ex voluptatum doloremque fugit, d
+                            ucimus in dolorem accusamus praesentium a
+                            liquid. Ab labore corporis quidem nobis d
+                            ucimus iure nesciunt nisi molestiae ipsa 
+                            pariatur. Rerum possimus repudiandae reici
+                            endis magnam atque. Modi, qui tempora! Rep
+                            ellendus perferendis fugiat recusandae hic
+                             ex dolorem. Porro consequuntur iusto dolo
+                             rem tempora rem quidem sint voluptatum? A
+                             liquam fugit corporis in. Esse ipsam libe
+                             ro assumenda accusantium nulla! Perferend
+                             is, recusandae error id quaerat eos quia 
+                             temporibus quo eaque ab explicabo suscipi
+                             t itaque excepturi at. Sunt libero volupt
+                             ates deleniti odio at omnis doloribus nat
+                             us sapiente delectus voluptatum ea, id ar
+                             chitecto fuga soluta molestias necessitat
+                             ibus, tempora obcaecati minus, distinctio
+                              minima repellendus aliquam. Facilis opti
+                              o dolore alias. Dolorem?
+                           </div>
+                        </div>
+
+
+                        <div class="holidays">
+                            <h1 class="holidaysHeader">Do początku wakacji jeszcze:</h1>
+                            <div id="holidayCounter">
+                                <span class="holidayCounterDigits" id="weeksCounter"></span><br>
+                                <span class="holidayCounterDigits" id="daysCounter"></span><br>
+                                <span class="holidayCounterDigits" id="hoursCounter"></span><br>
+                                <span class="holidayCounterDigits" id="minutesCounter"></span><br>
+                                <span class="holidayCounterDigits" id="secondsCounter"></span><br>
+                            </div>
+                            
+                        </div>
+                        <div class="time">
+                            <div class="clock"><h2 id="timeDisplay"></h2></div>
+                        </div>
+                        <div class="prawo">
+                            
+                        </div>
+                        <div class="tabs">
+                            <a class="tab" href="https://portal.librus.pl"><img class="iconImage"src="zdjecia/librusIcon.png"><h3>Librus</h3></a>
+                            <a class="tab" href="https://translate.google.pl/?hl=pl"><img class="iconImage"src="zdjecia/googleTranslateIcon.png"><h3>Tłumacz</h3></a>
+                            <a class="tab" href="https://www.facebook.com/"><img class="iconImage"src="zdjecia/facebookIcon.png"><h3>Facebook</h3></a>
+                            <a class="tab" href="https://www.youtube.com/"><img class="iconImage"src="zdjecia/youtubeIcon.png"><h3>Youtube</h3></a>
+                            <a class="tab" href="https://open.spotify.com/"><img class="iconImage"src="zdjecia/spotifyIcon.png"><h3>Spotify</h3></a>
+                            <a class="tab" href="https://www.eneba.com/pl/"><img class="iconImage"src="zdjecia/enebaIcon.png"><h3>Eneba</h3></a>
+                            <a class="tab" href="https://www.codewars.com/dashboard"><img class="iconImage"src="zdjecia/codewarsIcon.png"><h3>Codewars</h3></a>
+                            <a class="tab" href="https://www.frontendmentor.io"><img class="iconImage"src="zdjecia/cdkeysIcon.png"><h3>CDKeys</h3></a>
+                            <a class="tab" href="https://drive.google.com/drive/my-drive"><img class="iconImage"src="zdjecia/googleDriveIcon.png"><h3>Dysk Google</h3></a>
+                            <a class="tab" href=""><img class="iconImage"src="zdjecia/librusIcon.png"><h3>Puste </h3></a>
+                            <a class="tab" href=""><img class="iconImage"src="zdjecia/librusIcon.png"><h3>Puste</h3></a>
+                            <a class="tab" href=""><img class="iconImage"src="zdjecia/librusIcon.png"><h3>Puste</h3></a>
+                            <a class="tab" href=""><img class="iconImage"src="zdjecia/librusIcon.png"><h3>Puste</h3></a>
+                            <a class="tab" href=""><img class="iconImage"src="zdjecia/librusIcon.png"><h3>Puste</h3></a>
+                            <a class="tab" href=""><img class="iconImage"src="zdjecia/librusIcon.png"><h3>Puste</h3></a>
+                            <a class="tab" href=""><img class="iconImage"src="zdjecia/librusIcon.png"><h3>Puste</h3></a>
+                        </div>
+                        
+                        
+                        <div class="spaceTabs">
+                            <a class="tab" href="https://www.nasa.gov/"><img class="iconImage"src="zdjecia/nasaIcon.png"><h3>NASA</h3></a>
+                            <a class="tab" href="https://www.esa.int/"><img class="iconImage"src="zdjecia/esaIcon.png"><h3>ESA</h3></a>
+                            <a class="tab" href="https://www.ulalaunch.com/"><img class="iconImage"src="zdjecia/ULAIcon.png"><h3>ULA</h3></a>
+                            <a class="tab" href="https://www.rocketlabusa.com/"><img class="iconImage"src=zdjecia/RocketLabIcon.png><h3>Rocket Lab</h3></a>
+                            <a class="tab" href="https://www.blueorigin.com/"><img class="iconImage"src="zdjecia/blueOriginIcon.png"><h3>Blue Origin</h3></a>
+                            <a class="tab" href="https://www.relativityspace.com/"><img class="iconImage"src="zdjecia/relativitySpaceIcon.png"><h3>Relativity</h3></a>
+                            <a class="tab" href="https://firefly.com/"><img class="iconImage"src="zdjecia/fireflyIcon.png"><h3>FireFly</h3></a>
+                            <a class="tab" href=""><img class="iconImage"src="zdjecia/librusIcon.png"><h3>Puste</h3></a>
+                            <a class="tab" href="https://ntrs.nasa.gov"><img class="iconImage"src="zdjecia/stiIcon.png"><h3>NASA STI</h3></a>
+                            <a class="tab" href="https://api.nasa.gov/"><img class="iconImage"src="zdjecia/nasaIcon.png"><h3>NASA API </h3></a>
+                            <a class="tab" href=""><img class="iconImage"src="zdjecia/librusIcon.png"><h3>Puste</h3></a>
+                            <a class="tab" href=""><img class="iconImage"src="zdjecia/librusIcon.png"><h3>Puste</h3></a>
+                            <a class="tab" href=""><img class="iconImage"src="zdjecia/librusIcon.png"><h3>Puste</h3></a>
+                            <a class="tab" href=""><img class="iconImage"src="zdjecia/librusIcon.png"><h3>Puste</h3></a>
+                            <a class="tab" href=""><img class="iconImage"src="zdjecia/librusIcon.png"><h3>Puste</h3></a>
+                            <a class="tab" href=""><img class="iconImage"src="zdjecia/librusIcon.png"><h3>Puste</h3></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="slide">merkury</div>
+                <div class="slide">wenus  </div>
+                <div class="slide">ziemia </div>
+            </div>
+        </div>
+    </body>
+   
+</html> 
