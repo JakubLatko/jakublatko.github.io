@@ -69,6 +69,8 @@
    bottom: 46vh;
    align-self: flex-end;
    cursor: pointer; 
+   transition:width, height ease-in-out 250ms;
+   transition-delay: 200ms;
 }
 
 #apodClosing{
@@ -82,6 +84,8 @@
     right: 10vw;
     font-family: 'Vazirmatn', sans-serif;
     background-color: rgba(0, 0, 0, 0.25);
+    transition:width, height ease-in-out 250ms;
+    transition-delay: 200ms;
 }
 
 .enlargingIcon{
@@ -111,7 +115,7 @@
 .clock{
     width: 20vw;
     height: 15vh;
-    background-color: rgba(127, 255, 212, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     font-size: 72px;
     font-family: 'DM Sans', sans-serif;
     align-self: flex-end;
@@ -183,7 +187,7 @@
 }
 
 .holidays {
-    background-color: rgba(68, 68, 68, 0.25);
+    background-color: rgba(0, 0, 0, 0.1);
     grid-area: holidays;
     text-align: center;
 }
